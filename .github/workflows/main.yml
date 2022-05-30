@@ -7,8 +7,8 @@ on:
         description: ignore timestamp and force update
         required: false
         default: ''
-  repository_dispatch:
-		types: [webhook]
+  release:
+		types: [published]
 jobs:
   track:
     name: Track Webflow site changes
