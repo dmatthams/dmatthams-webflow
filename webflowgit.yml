@@ -1,5 +1,5 @@
 site: https://dmatthams.co.uk
-pages: false
+pages: true
 # OR
 # pages:
 #   ignore:
