@@ -25,8 +25,7 @@ jobs:
       - name: Commit and Push
         uses: EndBug/add-and-commit@v9
         with:
-          new_branch: main
-          tag_push: '--force'
+          push: origin main --force
           author_name: Webflow Git
           author_email: webflowgit@local
           message: 'Site updated'
