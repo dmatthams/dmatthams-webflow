@@ -1,0 +1,32 @@
+name: webflow-git
+
+on:
+  workflow_dispatch:
+    inputs:
+      force:
+        description: ignore timestamp and force update
+        required: false
+        default: ''
+  repository_dispatch:
+  	types:
+	  - webhook
+	  
+jobs:
+  track:
+    name: Track Webflow site changes
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Process Webflow Site
+        uses: sitemill/webflow-get@main
+
+      - name: Commit and Push
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: Webflow Git
+          author_email: webflowgit@local
+          message: 'Site updated'
