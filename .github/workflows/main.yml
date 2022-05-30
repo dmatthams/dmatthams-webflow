@@ -8,6 +8,7 @@ on:
         required: false
         default: ''
   repository_dispatch:
+		types: [webhook]
 jobs:
   track:
     name: Track Webflow site changes
