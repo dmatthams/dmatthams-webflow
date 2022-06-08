@@ -70,9 +70,11 @@
       });
     </script>
     <script>
-      $("[data-dark]").each(function (index, element) {
-        $(this).addClass("dark");
-      });
+      if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        $("[data-dark]").each(function (index, element) {
+          $(this).addClass("dark");
+        });
+      }
     </script>
   </body>
 </html>
