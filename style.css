@@ -2385,6 +2385,14 @@ blockquote {
   height: 500px;
   background-color: red;
 }
+.body-5 {
+  background-color: #fff;
+  color: #000;
+}
+.sometext.dark {
+  background-color: #000;
+  color: #fff;
+}
 @media screen and (max-width: 991px) {
   .header {
     padding: 7%;
