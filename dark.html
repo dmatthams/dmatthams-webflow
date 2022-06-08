@@ -75,6 +75,19 @@
           $(this).addClass("dark");
         });
       }
+
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (event) => {
+        const newColorScheme = event.matches ? "dark" : "light";
+        if (event.matches) {
+          $("[data-dark]").each(function (index, element) {
+            $(this).addClass("dark");
+          });
+        } else {
+          $("[data-dark]").each(function (index, element) {
+            $(this).removeClass("dark");
+          });
+        }
+      });
     </script>
   </body>
 </html>
