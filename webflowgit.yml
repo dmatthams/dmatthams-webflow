@@ -1,6 +1,0 @@
-site: https://dmatthams.webflow.io
-pages: true
-# OR
-# pages:
-#   ignore:
-#   - /posts/**
