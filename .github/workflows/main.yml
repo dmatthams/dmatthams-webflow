@@ -29,9 +29,8 @@ jobs:
       - name: Commit and Push
         uses: EndBug/add-and-commit@v9
         with:
-          add: 'dist'
+          add: 'dist --force'
           new_branch: main
           author_name: Webflow Git
           author_email: webflowgit@local
-          tag_push: '--force'
           message: 'Assets built'
