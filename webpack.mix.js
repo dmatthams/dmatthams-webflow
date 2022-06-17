@@ -1,6 +1,7 @@
 let mix = require('laravel-mix');
 
 mix.js('src/home.js', 'dist');
+mix.js('src/post.js', 'dist');
 mix.css('src/app.css', 'dist');
 
 mix.browserSync({
