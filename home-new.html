@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html data-wf-domain="dmatthams.co.uk" data-wf-page="5f27cd6d7067df0c773b7a21" data-wf-site="5f11a16f2e41f9b9380c2796" lang="en">
+<html data-wf-domain="dmatthams.co.uk" data-wf-page="62ac56f7714468b4bf046ac3" data-wf-site="5f11a16f2e41f9b9380c2796" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>David Matthams — Design &amp; Development</title>
+    <title>Home new</title>
     <meta content="David Matthams is an independent designer &amp; developer from Essex, England." name="description" />
-    <meta content="David Matthams — Design &amp; Development" property="og:title" />
+    <meta content="Home new" property="og:title" />
     <meta content="David Matthams is an independent designer &amp; developer from Essex, England." property="og:description" />
-    <meta content="David Matthams — Design &amp; Development" property="twitter:title" />
+    <meta content="Home new" property="twitter:title" />
     <meta content="David Matthams is an independent designer &amp; developer from Essex, England." property="twitter:description" />
     <meta property="og:type" content="website" />
     <meta content="summary_large_image" name="twitter:card" />
@@ -61,8 +61,7 @@
     <header class="header">
       <h1 class="intro">David Matthams is an independent designer &amp; developer from Essex, England.</h1>
       <nav aria-label="site" class="navigation">
-        <a href="/" aria-current="page" class="nav-link w--current">Home</a><a href="/work" class="nav-link">Work</a><a href="/photos" class="nav-link">Photos</a
-        ><a href="/about" class="nav-link">About</a>
+        <a href="/" class="nav-link">Home</a><a href="/work" class="nav-link">Work</a><a href="/photos" class="nav-link">Photos</a><a href="/about" class="nav-link">About</a>
       </nav>
     </header>
     <main class="container">
@@ -392,27 +391,6 @@
         elements_selector: ".lazy",
       });
     </script>
-    <script>
-      document.querySelector(".w-pagination-wrapper").style.display = "none";
-      var infElem = document.querySelector(".all__wrap");
-      var infScroll = new InfiniteScroll(infElem, {
-        path: ".w-pagination-next",
-        append: ".inline-item",
-        // history: 'push',
-        prefill: true,
-        maxPage: undefined,
-      });
-      infScroll.on("append", function (response, path, items) {
-        myLazyLoad.update();
-      });
-      //$(function() {
-      //  $('.inline-item__title').each(function(){
-      //      var lastletter = $(this).text().slice(-1);
-      //      if ( lastletter != '.' && lastletter != '?' && lastletter != '!') {
-      //          $(this).append('.')
-      //      }
-      //  });
-      //});
-    </script>
+    <script src="/dist/app.js" type="module"></script>
   </body>
 </html>
