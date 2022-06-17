@@ -61,4 +61,4 @@ createApp({
 		const options = { weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' };
 		this.date = date.toLocaleDateString('en-us', options);
 	},
-}).mount('#app');
+}).mount('#app'); 
