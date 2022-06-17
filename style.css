@@ -2008,6 +2008,9 @@ blockquote {
   display: block;
   text-decoration: none;
 }
+.all {
+  display: none;
+}
 .all__wrap {
   width: 100%;
   -webkit-flex-wrap: wrap;
