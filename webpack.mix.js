@@ -1,6 +1,6 @@
 let mix = require('laravel-mix');
 
-mix.js('src/home.js', 'dist').vue();
+mix.js('src/home.js', 'dist');
 mix.css('src/app.css', 'dist');
 
 mix.browserSync({
