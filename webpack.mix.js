@@ -1,7 +1,7 @@
 let mix = require('laravel-mix');
 
-// mix.js('src/home.js', 'dist');
-// mix.js('src/post.js', 'dist');
+mix.js('src/home.js', 'dist');
+mix.js('src/post.js', 'dist');
 // mix.css('src/app.css', 'dist');
 
 mix.browserSync({
@@ -10,13 +10,13 @@ mix.browserSync({
 	serveStatic: ['.'],
 	rewriteRules: [
 		{
-			match: new RegExp('https://cdn.jsdelivr.net/gh/dmatthams/dmatthams-webflow/js/home.js'),
+			match: new RegExp('https://cdn.jsdelivr.net/gh/dmatthams/dmatthams-webflow/dist/home.js'),
 			fn: function () {
 				return '/js/home.js';
 			},
 		},
 		{
-			match: new RegExp('https://cdn.jsdelivr.net/gh/dmatthams/dmatthams-webflow/js/post.js'),
+			match: new RegExp('https://cdn.jsdelivr.net/gh/dmatthams/dmatthams-webflow/dist/post.js'),
 			fn: function () {
 				return '/js/post.js';
 			},
