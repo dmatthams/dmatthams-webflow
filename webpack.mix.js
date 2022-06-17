@@ -12,13 +12,13 @@ mix.browserSync({
 		{
 			match: new RegExp('https://cdn.jsdelivr.net/gh/dmatthams/dmatthams-webflow/dist/home.js'),
 			fn: function () {
-				return '/js/home.js';
+				return '/dist/home.js';
 			},
 		},
 		{
 			match: new RegExp('https://cdn.jsdelivr.net/gh/dmatthams/dmatthams-webflow/dist/post.js'),
 			fn: function () {
-				return '/js/post.js';
+				return '/dist/post.js';
 			},
 		},
 	],
