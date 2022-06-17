@@ -10,13 +10,13 @@ mix.browserSync({
 	serveStatic: ['.'],
 	rewriteRules: [
 		{
-			match: new RegExp('https://cdn.jsdelivr.net/gh/dmatthams/dmatthams-webflow/src/home.js'),
+			match: new RegExp('https://cdn.jsdelivr.net/gh/dmatthams/dmatthams-webflow/js/home.js'),
 			fn: function () {
 				return '/js/home.js';
 			},
 		},
 		{
-			match: new RegExp('https://cdn.jsdelivr.net/gh/dmatthams/dmatthams-webflow/src/post.js'),
+			match: new RegExp('https://cdn.jsdelivr.net/gh/dmatthams/dmatthams-webflow/js/post.js'),
 			fn: function () {
 				return '/js/post.js';
 			},
