@@ -1,4 +1,4 @@
-import { createApp } from 'petite-vue';
+import { createApp } from 'https://unpkg.com/petite-vue?module';
 
 const apiToken =
 	'skkrDV4A0qbPVIkeVkOHRY97FeVBQ1QKAy0mDTAl1RkEUQDXzry9PdqvFvTFOKSEcepiO4DXu7AGmrqySnsMziM7uzJCWYLY8kvDI9BB8CU2vScb62EXcQlXfCEM24zAnotwrLOfhDq7pu8GA5q3KD9fcqRWBOOXPlfJ8kteRGNfkUTbwpMi';
