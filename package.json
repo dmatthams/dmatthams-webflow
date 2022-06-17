@@ -1,0 +1,22 @@
+{
+  "name": "dmatthams-webflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.43",
+    "vue-loader": "^16.8.3",
+	"vue": "^3.2.36"
+  },
+  "dependencies": {
+    "petite-vue": "^0.4.1"
+  }
+}
