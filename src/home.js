@@ -9,7 +9,7 @@ createApp({
 	posts: '',
 	// getters
 	async getPosts() {
-		const request = await fetch(apiUrl + '?query=*[(_type in ["post"])]');
+		const request = await fetch(apiUrl + '?query=*[(_type in ["post"])] | order(publishedAt desc)');
 		this.posts = await request.json();
 
 		// console.log(this.posts.result);
